@@ -1,0 +1,44 @@
+body{
+    background-color: #faf7e7ff;
+}
+#banner-canva{
+    display: flex;
+    flex-flow:column;
+    align-items: center; 
+}
+#countdown #information{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+}
+.item-countdown{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+}
+.text-info, .asistencia, .regalos, .mapa, .despedida{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    padding: 20px;
+}
+.icon-element{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.icon-info{
+    display: flex;
+    flex-flow:row;
+    justify-content:space-evenly;
+}
+.footer{
+    display: flex;
+    flex-flow:column;
+    align-items: center;
+    padding:10px;
+    font-size: 15px;
+    color:#faf7e7ff;
+    background-color: #937460ff;
+    margin: 0;
+}
