@@ -11,7 +11,7 @@
   <!-- Header -->
   <header>
     <div id="banner-canva">
-        <img src="./placeholder-img.png" height="500">
+        <img src="./banner-pagina.jpeg" height="500">
     </div>
   </header>
   <!-- Cuerpo principal -->
@@ -21,7 +21,7 @@
             <p>Se viene mi cumple y estoy emocionada por pasarlo con vos</p>
         </div>
         <div class="item-countdown">
-          <img src="./placeholder-img.png" height="200">  
+          <div id="contador-marco"><p id="contador-fecha"></p></div>
         </div>
     </div>
     <div id="information">
@@ -32,16 +32,16 @@
             </div>
             <div class="icon-info">
               <div class="icon-element">
-                <img src="./placeholder-img.png" height="50">
+                <img src="./clock-solid-full.svg" height="70">
                 <h3>Fecha y hora</h3>
-                <p>(fecha)</p>
-                <p>(hora)</p>
+                <p>El 28 de Febrero</p>
+                <p>A las 12:00pm</p>
               </div>
               <div class="icon-element">
-                <img src="./placeholder-img.png" height="50">
+                <img src="./map-location-dot-solid-full.svg" height="70">
                 <h3>¿Dónde?</h3>
-                <p>Queti</p>
-                <p>Queti</p>
+                <p>En el salon de eventos "Ohana"</p>
+                <p></p>
               </div>
             </div>
         </div>
@@ -56,11 +56,12 @@
       </div>
       <div class="icon-info">
         <div class="icon-element">
+          <img src="./user-tie-solid-full.svg" height="70">
           <h3>Codigo de Vestimenta</h3>
           <p>(relleno de texto)</p>
         </div>
         <div class="icon-element">
-          <img src="./placeholder-img.png" height="50">
+          <img src="./instagram-brands-solid-full.svg" height="70">
           <h3>¡Seguime!</h3>
           <a class="boton-magico" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Instagram de Sara</a>
         </div>      
@@ -77,4 +78,31 @@
     </div>
   </main>
 </body>
+<footer>
+  <script>
+// Set the date we're counting down to
+var countDownDate = new Date("Feb 28, 2026 12:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("contador-fecha").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+}, 1000);
+</script>
+</footer>
 </html>

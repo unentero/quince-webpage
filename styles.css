@@ -1,5 +1,7 @@
 body{
     background-color: #faf7e7ff;
+    color: #937460;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #banner-canva{
     display: flex;
@@ -26,6 +28,7 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
+
 }
 .icon-info{
     display: flex;
@@ -41,4 +44,27 @@ body{
     color:#faf7e7ff;
     background-color: #937460ff;
     margin: 0;
+}
+.item-countdown,#banner-canva,.regalos{
+    background-color: #95D994;
+    color:#faf7e7ff;
+    padding:10px;
+}
+#ubicacion{
+    color:#95D994;
+}
+#contador-marco{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 500px;
+    background-color:#F3EA6A;
+    border-radius: 5px;
+    border-color: #937460;
+    border-width: 10px;
+}
+#contador-fecha{
+    color:#937460;
+    font-size: 40px;
+    font-weight: 800;
 }
