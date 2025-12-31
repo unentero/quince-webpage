@@ -2,6 +2,8 @@ body{
     background-color: #faf7e7ff;
     color: #937460;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 #banner-canva{
     display: flex;
@@ -17,6 +19,10 @@ body{
     display: flex;
     flex-flow:column;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
 }
 .text-info, .asistencia, .regalos, .mapa, .despedida{
     display: flex;
@@ -28,27 +34,36 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
-
+    flex: 1 1 200px; 
+    max-width: 300px;
+    box-sizing: border-box;
+    padding: 10px;
 }
 .icon-info{
     display: flex;
-    flex-flow:row;
-    justify-content:space-evenly;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 20px;
 }
 .footer{
     display: flex;
     flex-flow:column;
     align-items: center;
-    padding:10px;
+    padding:12px;
     font-size: 15px;
     color:#faf7e7ff;
     background-color: #937460ff;
     margin: 0;
+    font-size: 14px;
 }
 .item-countdown,#banner-canva,.regalos{
     background-color: #95D994;
     color:#faf7e7ff;
-    padding:10px;
+    padding:12px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
 }
 #ubicacion{
     color:#95D994;
@@ -57,7 +72,9 @@ body{
     display: flex;
     flex-flow: column;
     align-items: center;
-    width: 500px;
+    width: 90%;
+    max-width: 500px;
+    box-sizing: border-box;
     background-color:#F3EA6A;
     border-radius: 5px;
     border-color: #937460;
@@ -65,6 +82,73 @@ body{
 }
 #contador-fecha{
     color:#937460;
-    font-size: 40px;
+    font-size: 36px; 
     font-weight: 800;
+}
+#banner-canva img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.mapa iframe{
+    width: 100%;
+    height: 300px; 
+    max-width: 100%;
+    border: 0;
+}
+.boton-magico{
+    display: inline-block;
+    background-color: #937460ff;
+    color: #faf7e7ff;
+    padding: 10px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+    
+    .icon-info{
+        flex-flow: column;
+        align-items: center;
+    }
+
+    #contador-fecha{
+        font-size: 28px;
+    }
+
+    .mapa iframe{
+        height: 220px;
+    }
+
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer{
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .item-countdown, #banner-canva, .regalos {
+        width: 100vw;
+        left: 50%;
+        right: 50%;
+        margin-left: 0;
+        margin-right: 0;
+        box-sizing: border-box;
+    }
+}
+
+@media (min-width: 1200px) {
+    #banner-canva img{
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .mapa iframe{
+        height: 450px;
+    }
 }
