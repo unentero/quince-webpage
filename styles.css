@@ -57,7 +57,7 @@ body{
     font-size: 14px;
 }
 .item-countdown,#banner-canva,.regalos{
-    background-color: #95D994;
+    background-color: #b1dab0;
     color:#faf7e7ff;
     padding:12px;
     width: 100%;
@@ -106,12 +106,15 @@ body{
     font-weight: 600;
 }
 p {
- font-size: 18px;
- font-weight: 500;   
+ font-size: 20px;
+ font-weight: 700;
+ color: #937460;
+ text-align: center;   
 }
 h2{
     font-size: 32px;
-    font-weight: 900;
+    font-weight: 1000;
+    color: #937460
 }
 h3{
     font-size: 25px;
