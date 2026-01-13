@@ -56,8 +56,8 @@ body{
     margin: 0;
     font-size: 14px;
 }
-.item-countdown,#banner-canva,.regalos{
-    background-color: #b1dab0;
+#banner-canva,.regalos{
+    background: #B1DAB0;
     color:#faf7e7ff;
     padding:12px;
     width: 100%;
@@ -65,8 +65,17 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
+#countdown{
+    background: #B1DAB0;
+    background: linear-gradient(0deg, rgba(250, 247, 231, 1) 0%,rgba(177, 218, 176, 1) 30%);
+    padding: 20px;
+}
 #ubicacion{
     color:#95D994;
+}
+.regalos{
+    background: #FAF7E7FF;
+    background: linear-gradient(0deg, rgba(250, 247, 231, 1) 0%, rgba(177, 218, 176, 1) 20%, rgba(177, 218, 176, 1) 80%, rgba(250, 247, 231, 1) 100%);
 }
 #contador-marco{
     display: flex;
