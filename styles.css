@@ -4,6 +4,7 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 #banner-canva{
     display: flex;
@@ -56,8 +57,8 @@ body{
     margin: 0;
     font-size: 14px;
 }
-#banner-canva,.regalos{
-    background: #B1DAB0;
+.item-countdown,#banner-canva,.regalos{
+    background-color: #9cdd9b;
     color:#faf7e7ff;
     padding:12px;
     width: 100%;
@@ -65,17 +66,8 @@ body{
     margin-left: 0;
     margin-right: 0;
 }
-#countdown{
-    background: #B1DAB0;
-    background: linear-gradient(0deg, rgba(250, 247, 231, 1) 0%,rgba(177, 218, 176, 1) 30%);
-    padding: 20px;
-}
 #ubicacion{
     color:#95D994;
-}
-.regalos{
-    background: #FAF7E7FF;
-    background: linear-gradient(0deg, rgba(250, 247, 231, 1) 0%, rgba(177, 218, 176, 1) 20%, rgba(177, 218, 176, 1) 80%, rgba(250, 247, 231, 1) 100%);
 }
 #contador-marco{
     display: flex;
@@ -84,14 +76,14 @@ body{
     width: 90%;
     max-width: 500px;
     box-sizing: border-box;
-    background-color:#f5ec72;
+    background-color:#f3ea73;
     border-radius: 5px;
     border-color: #937460;
     border-width: 10px;
 }
 #contador-fecha{
     color:#937460;
-    font-size: 36px; 
+    font-size: 20px; 
     font-weight: 800;
 }
 #banner-canva img{
@@ -118,12 +110,11 @@ p {
  font-size: 20px;
  font-weight: 700;
  color: #937460;
- text-align: center;   
 }
 h2{
     font-size: 32px;
     font-weight: 1000;
-    color: #937460
+    color: #937460;
 }
 h3{
     font-size: 25px;
@@ -133,6 +124,12 @@ h3{
     color:#faf7e7ff;
 }
 /* Media queries */
+@media (max-width: 480px) {
+    #contador-fecha {
+        font-size: 14px;
+        white-space: normal;
+    }
+}
 @media (max-width: 768px) {
     
     .icon-info{
